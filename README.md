@@ -4,8 +4,6 @@
 
 The purpose of these guidelines is to create and document appropriate coding standards for front-end/UI code (HTML, CSS and JavaScript) which can be used as a reference for developers both during development and code reviews. This is a living document and will be updated on an on-going basis.
 
-For any questions, please contact [Simon Hudson](mailto:simon.hudson@4energy.co.uk), Senior Front End Developer.
-
 ## Separation of concerns
 
 Throughout the application, content (HTML), presentation (CSS) and behaviour (JavaScript) are to be kept separate, which is achieved through the use of external CSS/JS files, proper use of semantic HTML elements, and appropriate naming of classes in CSS (amongst other things). This benefits maintenance, code visibility and maintains a true separation of UI components.
@@ -66,7 +64,8 @@ A table must contain the following attributes/elements
 *   _headers_ attribute on &lt;td&gt; to associate it with appropriate &lt;th&gt;
 
 A correctly written table should resemble the following
-<table class="confluenceTable"><tbody><tr><th class="confluenceTh"><pre>&lt;table&gt;
+<table class="confluenceTable"><tbody><tr><th class="confluenceTh">
+<pre>&lt;table&gt;
     &lt;caption&gt;Football League Championship as of 22nd November 2013&lt;/caption&gt;
     &lt;tr&gt;
         &lt;th id=&quot;position&quot; scope=&quot;col&quot;&gt;Position&lt;/th&gt;
@@ -88,7 +87,8 @@ A correctly written table should resemble the following
         &lt;td headers=&quot;team&quot;&gt;Queen's Park Rangers&lt;/td&gt;
         &lt;td headers=&quot;points&quot;&gt;32&lt;/td&gt;
     &lt;/tr&gt;
-&lt;/table&gt;</pre></th></tr></tbody></table>
+&lt;/table&gt;</pre>
+</th></tr></tbody></table>
 
 If the table is particularly complex (e.g: multiple headers, complicated cell/header relationships), we should also make use of the _summary_ attribute on the &lt;table&gt; element. In the _summary_, we should give a concise description of the table structure and data relationships.
 
@@ -125,7 +125,8 @@ In the case of a very long form with multiple errors, an error summary should be
 Forms must be written so that there is a logical tab order. This negates the need to use the _tabindex_ attribute on &lt;input&gt; elements which can cause accessibility issues.
 
 #### Form example
-<table class="confluenceTable"><tbody><tr><th class="confluenceTh"><pre>&lt;form id=&quot;some-form&quot; action=&quot;&quot; method=&quot;&quot;&gt;
+<table class="confluenceTable"><tbody><tr><th class="confluenceTh">
+<pre>&lt;form id=&quot;some-form&quot; action=&quot;&quot; method=&quot;&quot;&gt;
     &lt;p&gt;There were some errors when submitting your data. Please see the list below.&lt;/p&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;#name&quot;&gt;Please enter your name&lt;/a&gt;&lt;/li&gt;
@@ -154,7 +155,8 @@ Forms must be written so that there is a logical tab order. This negates the nee
         &lt;label for=&quot;address3&quot;&gt;Address line 3&lt;/label&gt;
         &lt;input id=&quot;address3&quot; placeholder=&quot;Some country&quot; type=&quot;text&quot; /&gt;
     &lt;/fieldset&gt;
-&lt;/form&gt;</pre></th></tr></tbody></table>
+&lt;/form&gt;</pre>
+</th></tr></tbody></table>
 
 ## CSS
 
@@ -199,7 +201,9 @@ Mixins are to be stored in a separate _mixins.scss file within the â€˜partialsâ€
 #### Variables
 
 Variables are to be declared at the top of the CSS section to which they apply, for example
-<table class="confluenceTable"><tbody><tr><th class="confluenceTh"><pre>/*
+<table class="confluenceTable"><tbody><tr><th class="confluenceTh">
+<pre>
+/*
  Feedback messages
  -------------------------*/
  $errorPrimary: #ef0000;
@@ -214,7 +218,8 @@ Variables are to be declared at the top of the CSS section to which they apply, 
  }
  .success-msg {
      color:$successPrimary;
- }</pre></th></tr></tbody></table>
+ }</pre>
+ </th></tr></tbody></table>
 
 #### Nesting
 
