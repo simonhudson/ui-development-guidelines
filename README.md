@@ -1,3 +1,5 @@
+# UI Development Guidelines
+
 ## Introduction
 
 The purpose of these guidelines is to create and document appropriate coding standards for front-end/UI code (HTML, CSS and JavaScript) which can be used as a reference for developers both during development and code reviews. This is a living document and will be updated on an on-going basis.
